@@ -1,0 +1,1 @@
+D:\OneDrive\ -\ UW-Madison\Code\Leetcode\Minimum_Hours_of_Training_to_Win_a_Competition\target\debug\Minimum_Hours_of_Training_to_Win_a_Competition.exe: D:\OneDrive\ -\ UW-Madison\Code\Leetcode\Minimum_Hours_of_Training_to_Win_a_Competition\src\main.rs
