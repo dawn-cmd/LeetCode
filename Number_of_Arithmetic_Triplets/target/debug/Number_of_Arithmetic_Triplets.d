@@ -1,0 +1,1 @@
+D:\OneDrive\ -\ UW-Madison\Code\Leetcode\Number_of_Arithmetic_Triplets\target\debug\Number_of_Arithmetic_Triplets.exe: D:\OneDrive\ -\ UW-Madison\Code\Leetcode\Number_of_Arithmetic_Triplets\src\main.rs
