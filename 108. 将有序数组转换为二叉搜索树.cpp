@@ -11,11 +11,9 @@ struct TreeNode {
 class Solution {
 public:
     TreeNode *build(const vector<int> &nums, int left, int right) {
-        if (left > right) {
-            return nullptr;
-        }
+        if (left > right) return nullptr;
         int mid = (left + right) >> 1;
-        TreeNode* cur = new TreeNode(nums[mid]);
+        TreeNode *cur = new TreeNode(nums[mid]);
         cur->left = build(nums, left, mid - 1);
         cur->right = build(nums, mid + 1, right);
         return cur;
