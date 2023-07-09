@@ -1,8 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-int main() {
-
-}
 class Solution {
 public:
     vector<int> findSubstring(string s, vector<string>& words) {
