@@ -57,11 +57,7 @@ impl Solution {
         ans
     }
     pub fn to_vector_char(s: String) -> Vec<char> {
-        let mut tmp = vec![];
-        for ch in s.chars() {
-            tmp.push(ch);
-        }
-        tmp
+        s.chars().collect()
     }
     pub fn feasibility_judge(s1: String, s2: String) -> bool {
         let mut s1_character_set: HashSet<char> = HashSet::new();
