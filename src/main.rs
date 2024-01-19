@@ -1,12 +1,25 @@
-pub mod p220;
-pub mod p235;
-pub mod p535;
-pub mod p289;
 pub mod test;
-pub mod p526;
-pub mod p466;
-pub mod p787;
+pub mod p165;
+
+// This function only gets compiled if the target OS is linux
+#[cfg(target_os = "linux")]
+fn are_you_on_linux() {
+    println!("You are running linux!");
+}
+
+// And this function only gets compiled if the target OS is *not* linux
+#[cfg(not(target_os = "linux"))]
+fn are_you_on_linux() {
+    println!("You are *not* running linux!");
+}
 
 fn main() {
-    println!("Hello, world!");
+    are_you_on_linux();
+
+    println!("Are you sure?");
+    if cfg!(target_os = "linux") {
+        println!("Yes. It's definitely linux!");
+    } else {
+        println!("Yes. It's definitely *not* linux!");
+    }
 }
