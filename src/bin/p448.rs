@@ -7,9 +7,9 @@ struct Solution;
 // @lc code=start
 impl Solution {
     pub fn find_disappeared_numbers(nums: Vec<i32>) -> Vec<i32> {
-        let mut nums = nums;
+        let mut nums: Vec<usize> = nums.iter().map(|x| *x as usize).collect();
         for i in 0..nums.len() {
-            while nums[i] as usize != i + 1 && nums[i] != nums[nums[i] as usize - 1] {
+            while nums[i] != i + 1 && nums[i] != nums[nums[i] - 1] {
                 let temp = nums[i];
                 nums[i] = nums[temp as usize - 1];
                 nums[temp as usize - 1] = temp;
