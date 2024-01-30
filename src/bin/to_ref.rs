@@ -96,7 +96,7 @@ fn main() {
     let mut matrix1 = vec![
         vec![1.0, 3.0, 1.0, 0.0],
         vec![2.0, 5.0, 0.0, 0.0],
-        vec![-3.0, 3.0, 1.0, 0.0],
+        vec![-3.0, 3.0, 21.0, 0.0],
     ];
     ToRref.process(&mut matrix1);
     println!("{:?}", matrix1);
